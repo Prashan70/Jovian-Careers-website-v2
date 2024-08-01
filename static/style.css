@@ -5,12 +5,12 @@
   border: border-box;
 }
 
-.container {
+.container1 {
   text-align: center;
 }
 
 .title {
-  margin-top: 10px;
+  margin-top: 70px;
   color: black;
   font-size: 50px;
   display: inline-block;
@@ -30,6 +30,19 @@
   border-radius: 4px;
   object-fit: cover;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.working {
+  background-image: url("/static/working.jpg");
+  height: 320px;
+  margin-top: 200px;
+  margin-right: 70px;
+  object-fit: cover;
+  background-size: cover;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -61,7 +74,6 @@
 .job-openings {
   text-align: center;
   margin-left: 30px;
-  margin-right: 30px;
 }
 
 .Job{
