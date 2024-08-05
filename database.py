@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, text
 import os
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path='C:\Prashant\V_S_code\Jovian-Careers-website-v2/Secret.env')
+load_dotenv(dotenv_path='.env')
 
 db_connection_string = os.getenv('DB_CONNECTION_STRING')
 
