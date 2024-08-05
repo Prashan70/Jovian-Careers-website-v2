@@ -1,7 +1,13 @@
 from sqlalchemy import create_engine, text
 import os
+from dotenv import load_dotenv
 
-db_connection_string = os.environ['DB_CONNECTION_STRING']
+load_dotenv(dotenv_path='C:\Prashant\V_S_code\Jovian-Careers-website-v2/Secret.env')
+
+db_connection_string = os.getenv('DB_CONNECTION_STRING')
+
+if db_connection_string is None:
+   raise ValueError("No DB_CONNECTION_STRING set for environment variable")
 
 engine = create_engine(db_connection_string)
 
