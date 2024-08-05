@@ -6,5 +6,8 @@ def load_jobs_from_db():
 
    with engine.connect() as conn:
       result = conn.execute(text("select * from jobs"))
-      jobs = [row._asdict for row in result.all()]
+      jobs = []
+      for row in result.all():
+         jobs.append(row._asdict())
+
       return jobs
