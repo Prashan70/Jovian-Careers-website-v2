@@ -110,3 +110,9 @@
 .adv p {
   font-weight: 200;
 }
+
+/*** Application Form **/
+
+.form h3 {
+  text-align: center;
+}
